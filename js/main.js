@@ -15,16 +15,16 @@ const sliderApp = new Vue ({
   methods: {
     prevImage: function(){ //vai all'img precedente
       if (this.currentImageIndex === 0) {
-        return this.currentImageIndex = this.myImages.length - 1;
+        this.currentImageIndex = this.myImages.length - 1;
       } else {
-        return this.currentImageIndex--;
+        this.currentImageIndex--;
       }
     },
     nextImg: function(){ //vai all'img successiva
       if (this.currentImageIndex === this.myImages.length - 1){
-        return this.currentImageIndex = 0;
+        this.currentImageIndex = 0;
       } else {
-        return this.currentImageIndex++;
+        this.currentImageIndex++;
       }
     }
   }
