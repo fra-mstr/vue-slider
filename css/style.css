@@ -1,0 +1,21 @@
+/* #slider [class*='col-'] {
+  border: 2px solid black;
+} */
+
+.arrow-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow-col i {
+  cursor: pointer;
+}
+.arrow-col i:hover {
+  opacity: 0.4;
+}
+
+#slider img {
+  width: 100%;
+  height: 80vh;
+}
